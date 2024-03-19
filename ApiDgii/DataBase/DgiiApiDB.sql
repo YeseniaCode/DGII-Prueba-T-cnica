@@ -1,6 +1,6 @@
 
 CREATE DATABASE DBDGII;
-GO
+Go
 
 USE DBDGII;
 GO
@@ -42,7 +42,7 @@ SELECT * FROM Contribuyentes;
 SELECT * FROM ComprobantesFiscales;
 
 drop table Contribuyentes;
--- Agregar la relación entre las tablas
+-- Agregar la relaciï¿½n entre las tablas
 ALTER TABLE ComprobantesFiscales
 ADD CONSTRAINT FK_Contribuyentes_rncCedula FOREIGN KEY (rncCedula)
 REFERENCES Contribuyentes(rncCedula);
